@@ -1,11 +1,11 @@
 #include <iostream>
 
-#include "util/timer.h"
+#include "timer.h"
 
 
 
 int main() {
-    util::Timer timer(1000, []() {std::cout << "Hello World\n";});
+    util::Timer timer(3000, []() {std::cout << "Hello World\n";});
     std::cout << "Press 's' to start the timer, 'r' to reset, 'm' to stop, or 'q' to quit." << std::endl;
 
     char choice;
